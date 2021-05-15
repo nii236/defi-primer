@@ -1,4 +1,4 @@
-# 7. DeFi Explained: Wrapped Bitcoin
+# Wrapped Bitcoin
 
 You might have come across the term “wrapped Bitcoin” in the DeFi space. How is it possible that (wrapped) Bitcoin is available on Ethereum, even though Bitcoin is on another block chain? And why would you use wrapped Bitcoins in the first place? In this post I’ll try to answer these questions.
 

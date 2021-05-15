@@ -1,4 +1,4 @@
-# 4. DeFi Explained: Non Fungible Tokens
+# Non Fungible Tokens
 
 What are NFTs? And what can you do with them? In this post I’ll try to answer these questions.
 

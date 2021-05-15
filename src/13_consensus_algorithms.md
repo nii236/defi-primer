@@ -1,4 +1,4 @@
-# 13. DeFi Explained: Consensus Algorithms
+# 1Consensus Algorithms
 
 Every day, millions of transactions are performed on various blockchains. To perform a transaction, one has to pay a transaction fee. Transaction fees are paid to cryptocurrency miners in exchange for their transaction verification work.
 

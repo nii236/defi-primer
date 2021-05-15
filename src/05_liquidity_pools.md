@@ -1,4 +1,4 @@
-# 5. DeFi Explained: Liquidity Pools
+# Liquidity Pools
 
 You may have come across the theory of liquidity pools in the Defi ecosystem.
 

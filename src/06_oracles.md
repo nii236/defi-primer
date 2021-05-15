@@ -1,4 +1,4 @@
-# 6. DeFi Explained: Oracles
+# Oracles
 
 What are oracles? How do they work? And how do smart contracts benefit from them? I’ll try to answer these questions in this post.
 

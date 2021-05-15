@@ -1,4 +1,4 @@
-# 14. DeFi Explained: Stablecoins
+# 1Stablecoins
 
 Compared to the traditional stock market, the crypto market is extremely volatile. At the time of writing, we are in a bull run. During bull runs, profit can easily be made: You invest (in a coin you researched thoroughly) and wait for your profit to grow. But what if the bull run turns into a bear market? In what assets should you invest? This is where stablecoins come into play.
 

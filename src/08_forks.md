@@ -1,4 +1,4 @@
-# 8. DeFi Explained: Forks
+# Forks
 
 You might have heard of forks. A fork is a piece of cutlery, which... Oops, wrong fork! Forks play an essential role within the crypto world. New blockchains and platforms are born on a daily basis because of them. Once you understand what forks are – And what they do, it will be much easier to wrap your head around most blockchains, cryptocurrencies and tokens.
 

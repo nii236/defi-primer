@@ -1,4 +1,4 @@
-# 12. DeFi Explained: Indices
+# 1Indices
 
 In traditional stock markets, millions of dollars are invested into Index funds. The most popular category of index funds are ETFs, which are passively managed funds that fill their investment basket by tracking a particular index. This makes it easy for investors to have good spreading in their portfolio without putting too much effort and time into managing it. Crypto also has its indices, which are very similar to how ETFs work. Typically, crypto indices track currencies or tokens. Before we talk about crypto indices – For the sake of clarification – Let's first focus on what ETFs exactly are and how they work.
 

@@ -1,4 +1,4 @@
-# 3. DeFi Explained: Smart Contracts
+# Smart Contracts
 
 What is a smart contract? How do smart contracts work? And what are they good for? I'll try to answer these questions in this post.
 

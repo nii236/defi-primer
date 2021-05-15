@@ -1,4 +1,4 @@
-# 10. DeFi Explained: Margin Trading
+# 1Margin Trading
 
 The year is 2021. DeFi is booming. Loan and yield farming platforms are incredibly popular: Billions of dollars circulate in them. But, DeFi also has its margin and derivatives platforms. First-time investors typically stay far away from these platforms – which they should. Nevertheless, it is important to talk about these platforms and explain how they work. So, In this article, the focus is on margin trading and it’s DeFi platforms.
 

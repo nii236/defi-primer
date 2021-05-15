@@ -1,4 +1,4 @@
-# 9. DeFi Explained: Lending and Borrowing
+# Lending and Borrowing
 
 DeFi had recently breached a new milestone: after breaking $100 billion TVL, it managed to be the equivalent of a top 40 U.S. bank. New investors are moving their assets to DeFi on a daily basis. And at the time of writing, lending and borrowing platforms are becoming widely popular. Which brings us to the question: What is all the fuss about lending and borrowing in crypto? And who are the big players in this game?
 

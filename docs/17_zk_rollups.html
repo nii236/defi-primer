@@ -1,0 +1,306 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ZK Rollups - DeFi Primer</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <link rel="stylesheet" href="css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="00_introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="01_what_is_defi.html"><strong aria-hidden="true">2.</strong> What is DeFi?</a></li><li class="chapter-item expanded "><a href="02_defi_wallets.html"><strong aria-hidden="true">3.</strong> Defi wallets</a></li><li class="chapter-item expanded "><a href="03_smart_contracts.html"><strong aria-hidden="true">4.</strong> Smart contracts</a></li><li class="chapter-item expanded "><a href="04_non_fungible_tokens.html"><strong aria-hidden="true">5.</strong> Non fungible tokens</a></li><li class="chapter-item expanded "><a href="05_liquidity_pools.html"><strong aria-hidden="true">6.</strong> Liquidity pools</a></li><li class="chapter-item expanded "><a href="06_oracles.html"><strong aria-hidden="true">7.</strong> Oracles</a></li><li class="chapter-item expanded "><a href="07_wrapped_bitcoin.html"><strong aria-hidden="true">8.</strong> Wrapped bitcoin</a></li><li class="chapter-item expanded "><a href="08_forks.html"><strong aria-hidden="true">9.</strong> Forks</a></li><li class="chapter-item expanded "><a href="09_lending_and_borrowing.html"><strong aria-hidden="true">10.</strong> Lending and borrowing</a></li><li class="chapter-item expanded "><a href="10_margin_trading.html"><strong aria-hidden="true">11.</strong> Margin trading</a></li><li class="chapter-item expanded "><a href="11_derivatives.html"><strong aria-hidden="true">12.</strong> Derivatives</a></li><li class="chapter-item expanded "><a href="12_indices.html"><strong aria-hidden="true">13.</strong> Indices</a></li><li class="chapter-item expanded "><a href="13_consensus_algorithms.html"><strong aria-hidden="true">14.</strong> Consensus algorithms</a></li><li class="chapter-item expanded "><a href="14_stablecoins.html"><strong aria-hidden="true">15.</strong> Stablecoins</a></li><li class="chapter-item expanded "><a href="15_yield_farming.html"><strong aria-hidden="true">16.</strong> Yield farming</a></li><li class="chapter-item expanded "><a href="16_sidechains.html"><strong aria-hidden="true">17.</strong> Sidechains</a></li><li class="chapter-item expanded "><a href="17_zk_rollups.html" class="active"><strong aria-hidden="true">18.</strong> ZK Rollups</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">DeFi Primer</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                        
+
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="1zk-rollups"><a class="header" href="#1zk-rollups">1ZK Rollups</a></h1>
+<p>Scalability is without a doubt the biggest problem that Bitcoin (BTC) and other blockchains are facing. Due to the nature of most blockchains, cryptocurrency suffers from slow transaction speeds and high transaction costs. Ethereum is no exception either. In fact, since the rise of DeFi and NFTs, the Ethereum network has become clogged.</p>
+<p>A lot of other crypto projects are trying to overthrow Ethereum by using different infrastructures. Cryptocurrencies such as Polkadot, Cardano and Binance’s blockchain claim to be faster and more scalable than Ethereum. However, Ethereum hasn’t been sitting still either.</p>
+<p>The DeFi giant is currently busy making the network more scalable. All solutions for making the network more scalable fall under the guise: &quot;Layer 2 Solutions&quot;. In my previous post we’ve discussed about one of the Layer 2 Solutions: sidechains.</p>
+<p>Another highly anticipated Layer 2 Solution are ZK Rollups. Let’s dive into what ZK Rollups exactly are and how they are used.</p>
+<h2 id="zk-rollups"><a class="header" href="#zk-rollups">ZK Rollups</a></h2>
+<p>ZK Rollups are Layer 2 Solutions, or second layer solutions. Layer 2 is a collective term for solutions designed to help scale up networks further by handling transactions outside of the network's main chain (layer 1). The main chain is the chain where all Ethereum transactions are handled.</p>
+<p>The transaction speed suffers when the network is busy. As the network gets busier, transaction costs increase as transaction senders want to outbid each other. This can make the use of Ethereum very expensive, as can also be seen in real-time on the Ethereum gas tracker.</p>
+<p>The DeFi and NFT hype is not the first time that the Ethereum network has been overloaded. In the 2017 bull run during the ICO hype and the CryptoKitties bubble, we saw the same thing happen. Since the vast majority of ICOs are made on the Ethereum blockchain, this resulted in a similar increase in transaction costs at the time.</p>
+<p>Layer 2 Solutions are therefore in favor of scaling up the network so that the use of Ethereum becomes cheaper.</p>
+<p>ZK Rollups are one of the options being developed for a 2-layer construction that increases scalability by putting mass transfer processing into a single transaction. ZK Rollups bundle hundreds of transfers into one single transaction. After bundleing, a smart contract takes care of the verification of all transfers included in that one transaction.</p>
+<p>A zero knowledge proof (ZK) approach is used to present and publicly record the block's validity on the Ethereum blockchain. The Zero Knowledge protocol reduces computer usage and storage resources for block validation by reducing the amount of data held in a transaction; no knowledge of the complete data is required.</p>
+<p>Simply put, Zero Knowledge can be best described as a situation where each of two parties to a transaction is able to verify to each other that they have certain information, while not having to disclose what that information is.</p>
+<p>For ZK Rollups, the Zero Knowledge part is done by the zk-SNARK. Namely, it reports to have knowledge that the root data of the penultimate accepted snapshot matches the root data of the new snapshot, without showing the root data to the validator: the SNARK only reports the hashes.</p>
+<h2 id="how-zk-rollups-work"><a class="header" href="#how-zk-rollups-work">How ZK Rollups work</a></h2>
+<p>Now you know that ZK Rollups is a scalability solution that is the second layer on the main chain. The next step is how ZK Rollups work exactly.</p>
+<p>ZK Rollups are solutions that execute transactions outside the mainchain, but place transaction data in the mainchain. Thus, because transaction data resides on the mainchain, Rollups can be secured by layer 1. Taking over the Ethereum backbone security properties for the transaction data, while execution is performed outside of layer 1, is a defining feature of ZK Rollups.</p>
+<p>Three simplified features of Rollups are:</p>
+<ul>
+<li>Transaction execution not on layer 1, but off-chain on the Rollup Chain.</li>
+<li>Proof of transactions is at layer 1.</li>
+<li>A ZK Rollup is a layer 1 smart contract that can enforce proper transaction execution by using the layer 1 transaction data.</li>
+</ul>
+<p>ZK Rollups require the implementers (relayers) to stake part of their ETH in the Rollup contract. This encourages the executors to verify and execute transactions correctly so that the network remains secure.</p>
+<p>There are several types of Rollups, namely:</p>
+<ul>
+<li>Zero Knowledge (ZK) Rollups: performs calculations outside the chain and submits validity proof to the main chain.</li>
+<li>Optimistic Rollups: Assumes that transactions are valid by default and only performs calculations, via a fraud proof, in the event of a challenge.</li>
+</ul>
+<p>Optimistic Rollups are easier to implement in the Ethereum blockchain, but do not bring nearly the same scalability benefits as ZK Rollups. I’ll discuss Optimistic Rollups in an another post.</p>
+<p>ZK Rollups bundle, or &quot;roll-up&quot;, hundreds of data transfers off-chain and generate a cryptographic proof known as a zk-SNARK. zk-SNARK stands for &quot;zero-knowledge succinct non-interactive argument of knowledge&quot;. The zk-SNARK is the proof of validity of hundreds of transfers in the form of a hash and is eventually placed on the main chain.</p>
+<p>A ZK Rollup is formed on the basis of a reasonable technical concept. The ZK Rollup scheme consists of two types of users: transactors and relayers.</p>
+<h2 id="transactors"><a class="header" href="#transactors">Transactors</a></h2>
+<p>Transactors are basically just participants of the smart contract within the Ethereum network. They complete their transaction and broadcast the transaction to the network. The transaction data consists of:</p>
+<ul>
+<li>A &quot;to&quot; and &quot;from&quot; address</li>
+<li>A transaction value</li>
+<li>The network costs</li>
+<li>The nonce</li>
+</ul>
+<p>The smart contract stores the data in two Merkle Trees; one for the addresses and one for the transaction amounts and the nonce.</p>
+<h2 id="relayers"><a class="header" href="#relayers">Relayers</a></h2>
+<p>Relayers collect a large number of transactions to make them into a Rollup; a roll-up of transactions. It is the job of the relayers to generate the zk-SNARK certificate of validity.</p>
+<p>Any participant in the Ethereum network can become a relayer, as long as they have staked the required number of ETH in the smart contract.</p>
+<h2 id="zk-snark"><a class="header" href="#zk-snark">zk-SNARK</a></h2>
+<p>The ZK Rollup smart contract maintains the status of the transfers made at layer 2. The status can only be updated with a validity card; the zk-SNARK. The zk-SNARK is a hash that represents the blockchain's validity status.</p>
+<p>The zk-SNARK is formed in the following order:</p>
+<ol>
+<li>The zk-SNARK compares the blockchain snapshot of before a new bundle of transactions with the blockchain snapshot from after a new bundle of transactions. The goal is to prevent the adjustment of the transactions on the blockchain.</li>
+<li>The ZK Rollup smart contract will only accept a new transaction bundle when the previous snapshot hash matches the most recent saved snapshot hash (0x1f59b49c).</li>
+<li>If accepted, the new bundle of transactions will be saved in the contract with a, at that point, new recent snapshot hash (0x862ae48).</li>
+<li>The zk-SNARK proves that if the previous snapshot hash has a value of 0x1f59b49c, and the new transaction bundle data is added to it, the result is that the new snapshot hash is 0x862ae48.</li>
+<li>The zk-SNARK only reports the changes in the verifiable hashes to the Ethereum mainnet.</li>
+<li>This allows only bundles to be added to a Rollup whose root information matches that of the previous accepted snapshot.</li>
+</ol>
+<p>This ultimately ensures that ZK Rollups make the network faster. The Zero Knowledge protocol reduces the computing power and storage resources needed to validate the block, eliminating the need for knowledge of all data, but only of the zk-SNARK.</p>
+<p>With a ZK Rollup, there are no delays in moving funds from layer 2 to layer 1, as the ZK Rollup contract's proof of validity has already verified the funds. So a ZK Rollup makes validating a block faster and cheaper because less data is included.</p>
+<h2 id="disadvantages-of-zk-rollups"><a class="header" href="#disadvantages-of-zk-rollups">Disadvantages of ZK Rollups</a></h2>
+<p>Yes, there are also disadvantages to ZK Rollups. ZK Rollups cannot be used by the Ethereum Virtual Machine (EVM) on which all DApps are built. Thus, existing DApps cannot implement ZK Rollups in their current ecosystem.</p>
+<p>Another issue is that the first setup of ZK Rollups is a centralized process, because the first status cannot be verified. A small group of developers will therefore initially deal with the initial status of the Rollup. This undermines the decentralization of Ethereum and also opens the risk of hacking attacks via social engineering.</p>
+<h2 id="summary-the-pros-and-cons-of-zk-rollups"><a class="header" href="#summary-the-pros-and-cons-of-zk-rollups">Summary: The pros and cons of ZK Rollups</a></h2>
+<p>In order to finalize this (way too long) post, let’s make quick summary of the pros and cons of ZK Rollups.</p>
+<h3 id="pros"><a class="header" href="#pros">Pros</a></h3>
+<ul>
+<li>Reduced costs per user transfer.</li>
+<li>Faster than Optimistic Rollups and Plasma.</li>
+<li>Less data in each transaction increases layer 2 throughput and scalability.</li>
+</ul>
+<h3 id="cons"><a class="header" href="#cons">Cons</a></h3>
+<ul>
+<li>Not (yet) compatible with the Ethereum Virtual Machine.</li>
+<li>The initial setup of ZK Rollups promotes a centralized process.</li>
+</ul>
+<h2 id="conclusion"><a class="header" href="#conclusion">Conclusion</a></h2>
+<p>ZK Rollups are a solution for blockchains to be able to scale up further, so that they can execute faster and more transactions. Like other Layer 2 Solutions such as sidechains, ZK Rollups are a Layer 2 Solution on top of the main chain (off-chain). And because of this, not all data has to be included in the main chain, making the validation of blocks faster and cheaper.</p>
+<ul>
+<li>Interested in other Layer 2 Solutions? Read my post about sidechains <a href="https://www.reddit.com/r/CryptoCurrency/comments/nc3ck2/defi_explained_sidechains/">here</a>.</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="16_sidechains.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="16_sidechains.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>

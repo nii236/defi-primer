@@ -1,4 +1,4 @@
-# 2. DeFi Explained: DeFi wallets
+# DeFi wallets
 
 What are the best DeFi-friendly wallets? What features do they support? And what are the pros and cons of using each of them? I’ll try to answer these questions in this post.
 

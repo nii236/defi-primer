@@ -1,4 +1,4 @@
-# 1. DeFi Explained: What is DeFi?
+# What is DeFi?
 
 DeFi or decentralized finance is a movement that aims at making a new financial system that is open to everyone and doesn’t require trusting intermediaries like banks. To achieve that defi relies heavily on cryptography, blockchain and smart contracts. Smart contracts are the main building blocks of defi.
 
