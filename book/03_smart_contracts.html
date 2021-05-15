@@ -1,0 +1,284 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>03. Smart contracts - DeFi Primer</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <link rel="stylesheet" href="css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="00_introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="01_what_is_defi.html"><strong aria-hidden="true">2.</strong> What is DeFi?</a></li><li class="chapter-item expanded "><a href="02_defi_wallets.html"><strong aria-hidden="true">3.</strong> Defi wallets</a></li><li class="chapter-item expanded "><a href="03_smart_contracts.html" class="active"><strong aria-hidden="true">4.</strong> Smart contracts</a></li><li class="chapter-item expanded "><a href="04_non_fungible_tokens.html"><strong aria-hidden="true">5.</strong> Non fungible tokens</a></li><li class="chapter-item expanded "><a href="05_liquidity_pools.html"><strong aria-hidden="true">6.</strong> Liquidity pools</a></li><li class="chapter-item expanded "><a href="06_oracles.html"><strong aria-hidden="true">7.</strong> Oracles</a></li><li class="chapter-item expanded "><a href="07_wrapped_bitcoin.html"><strong aria-hidden="true">8.</strong> Wrapped bitcoin</a></li><li class="chapter-item expanded "><a href="08_forks.html"><strong aria-hidden="true">9.</strong> Forks</a></li><li class="chapter-item expanded "><a href="09_lending_and_borrowing.html"><strong aria-hidden="true">10.</strong> Lending and borrowing</a></li><li class="chapter-item expanded "><a href="10_margin_trading.html"><strong aria-hidden="true">11.</strong> Margin trading</a></li><li class="chapter-item expanded "><a href="11_derivatives.html"><strong aria-hidden="true">12.</strong> Derivatives</a></li><li class="chapter-item expanded "><a href="12_indices.html"><strong aria-hidden="true">13.</strong> Indices</a></li><li class="chapter-item expanded "><a href="13_consensus_algorithms.html"><strong aria-hidden="true">14.</strong> Consensus algorithms</a></li><li class="chapter-item expanded "><a href="14_stablecoins.html"><strong aria-hidden="true">15.</strong> Stablecoins</a></li><li class="chapter-item expanded "><a href="15_yield_farming.html"><strong aria-hidden="true">16.</strong> Yield farming</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">DeFi Primer</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                        
+
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="3-defi-explained-smart-contracts"><a class="header" href="#3-defi-explained-smart-contracts">3. DeFi Explained: Smart Contracts</a></h1>
+<p>What is a smart contract? How do smart contracts work? And what are they good for? I'll try to answer these questions in this post.</p>
+<h2 id="what-are-smart-contracts"><a class="header" href="#what-are-smart-contracts">What are smart contracts?</a></h2>
+<p>A smart contract is an agreement between two or more parties in the form of computer code. The contracts are stored on the blockchain and cannot be changed. Transactions that take place in a smart contract are processed by the blockchain, which means they can be sent automatically without the intervention of a third party. When you enter into an agreement with a smart contract, no confidential advisor is required. The transactions only take place if the conditions in the agreement are met.</p>
+<h2 id="what-can-smart-contracts-do"><a class="header" href="#what-can-smart-contracts-do">What can smart contracts do?</a></h2>
+<p>Smart contracts help you exchange money, stock or anything else of value in a transparent, trustless manner, all while avoiding the services of an intermediary and the possibility of conflict. Smart contracts provide you:</p>
+<ul>
+<li>Autonomy - You are the one who makes the deal and you don't have to rely on an intermediary to confirm transactions. The execution is automatically managed by a decentralized network, which excludes manipulation of contracts.</li>
+<li>Speed ​​- Automated contracts can save you hours on manual paperwork.</li>
+<li>Security - Smart contracts are secured with similar cryptography that encrypts websites. In short, it keeps your documents safe.</li>
+<li>Savings - Because they disable the presence of an intermediary, smart contracts can save you a lot of money. Where, for example, you would normally have to pay a notary to witness your transaction, this is now regulated by the blockchain.</li>
+<li>Backup - Unlike files on your computer, data on the blockchain is duplicated many times over. So you do not have to be afraid of losing something that is registered on the blockchain. Also, there is no way anyone can say they lost the contract or the dog ate it.</li>
+</ul>
+<h2 id="a-smart-contract-in-effect"><a class="header" href="#a-smart-contract-in-effect">A smart contract in effect</a></h2>
+<p>As an example; If you were to register cinema tickets on the blockchain using a smart contract, then as a visitor you will receive the tickets in your personal wallet. You only have to show the address to which the tickets were sent upon entry and the cinema can immediately be sure that you do not have any fake tickets and that you have actually paid for your tickets. This gives a better customer experience and the cinema can save a lot of costs in this way because it no longer needs ticket processing services.</p>
+<h2 id="but-why-is-this-so-safe"><a class="header" href="#but-why-is-this-so-safe">But why is this so safe?</a></h2>
+<p>Thanks to blockchain technology, we can decentralize smart contracts so that they are fair and trusted. Decentralization means that they are not controlled by one central party, such as a bank or the government.</p>
+<p>The blockchain is a shared database managed by many different computers (nodes). As a result, not one person or company has control over it. It also means that it is almost impossible to hack it and therefore smart contracts can be executed securely and automatically without anyone being able to change them.</p>
+<h2 id="best-practices-for-smart-contracts"><a class="header" href="#best-practices-for-smart-contracts">Best practices for smart contracts</a></h2>
+<p>In principle, smart contracts can be used for any type of transaction, it does not have to be financial. Here are some industries where smart contracts can be used conveniently.</p>
+<h2 id="insurances"><a class="header" href="#insurances">Insurances</a></h2>
+<p>The insurance world could be shaken up considerably by blockchain technology. An example of a smart contract was a project run by a French insurance company called AXA. AXA offered flight insurance that were paid out if the policyholder's flight was delayed by more than two hours. AXA was running a pilot project that payed out insurance via smart contracts on the Ethereum blockchain. Unfortunately the project has been discontinued.</p>
+<p>The smart contract worked with an “if / then function”: IF the flight was delayed by more than two hours, THEN the policyholder would be paid. Because the smart contract was connected to a database that keeps track of flight times, the function could be performed automatically and paid for via the Ethereum blockchain. This would have saved a lot of time for AXA, but also for the policyholder. This is just one example of the many options that smart contracts offer.</p>
+<h2 id="healthcare"><a class="header" href="#healthcare">Healthcare</a></h2>
+<p>Within healthcare, smart contracts will be used to record and securely transfer data. We can already see examples of smart contracts used in the medical industry, such as the company Encrypgen, for example. This is an application that uses blockchain to transfer patient data in a secure manner, eliminating the need for third-party access. In this way, the patients are in control of their own data. If researchers want to use patient data, they have to pay for it. The patient also chooses whether the data may be sold or not.</p>
+<h2 id="governments"><a class="header" href="#governments">Governments</a></h2>
+<p>Governments guarantee that it is extremely difficult to manipulate the voting system, but despite that, smart contracts could alleviate all concerns by providing an infinitely more secure system. Smart contracts could also prevent low voter turnout. Much of the small turnout is due to a clunky system consisting of lining up a queue, showing your identity, and filling out forms. With the use of smart contracts, anyone can transfer their votes securely online, which is expected to generate much more response.</p>
+<h2 id="business-management"><a class="header" href="#business-management">Business management</a></h2>
+<p>There is still a lot of room for improvement within business management and smart contracts can help a lot. Why do administration when everything is registered on the blockchain anyway? Right, the blockchain is already doing the work for you. You also do not have to make a pay slip every month. The money automatically goes to your employees as soon as they have fulfilled the agreements. Companies can simply set up a smart contract that states: IF the date is 10/20/2020, THEN $2500 will be sent to employee A. This means that employees will always be paid on time and that they will never be underpaid. The advantage of the company is that it is all automated, saving them a lot of time and money!</p>
+<h2 id="fundraising-icos"><a class="header" href="#fundraising-icos">Fundraising (ICOs)</a></h2>
+<p>In principle, anyone could create their own token and sell it to the general public in order to raise money for a project. In 2017 there was a real ICO craze, where some projects managed to raise tens of millions within hours. There was even an EOS ICO that lasted for a year and racked up more than $ 4 billion in total!</p>
+<p>If you want to organize an ICO (Initial Coin Offering) you create a token and a contract to sell the token. The function of the smart contract in this case would be: if person A sends an X amount of ETH, person A gets an X amount of tokens.</p>
+<h2 id="smart-contracts-in-a-nutshell"><a class="header" href="#smart-contracts-in-a-nutshell">Smart contracts in a nutshell</a></h2>
+<p>The most important features of a smart contract are:</p>
+<ul>
+<li>Digital Agreement - A smart contract is an agreement in the form of computer code.</li>
+<li>Blockchain - Transactions are processed by a public database, based on blockchain technology.</li>
+<li>Confidentiality - A transaction can only take place if the conditions in the agreement are met.</li>
+</ul>
+<h2 id="conclusion"><a class="header" href="#conclusion">Conclusion</a></h2>
+<p>It will be a while before smart contracts are everywhere in everyday life, but we can say with some certainty that the technology has a lot to offer.</p>
+<p>I hope this post helped you with:</p>
+<ul>
+<li>Getting a better understanding of smart contracts</li>
+<li>Understanding the significance of smart contracts within the crypto space.</li>
+</ul>
+<p>Next post: <a href="https://www.reddit.com/r/CryptoCurrency/comments/mexb51/defi_explained_nfts/">NFTs</a><br />
+Wondering which crypto wallet you need? Check my post about wallets <a href="https://www.reddit.com/r/CryptoCurrency/comments/mdjsrj/defi_explained_defi_wallets/">here</a>.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="02_defi_wallets.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="04_non_fungible_tokens.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="02_defi_wallets.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="04_non_fungible_tokens.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
