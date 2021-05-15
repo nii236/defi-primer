@@ -1,4 +1,4 @@
-# 1Yield Farming
+# Yield Farming
 
 Yield farming is becoming increasingly popular among crypto investors. Of course, this is not illogical: DeFi platforms offer much higher interest rates compared to traditional banks. To understand yield farming, you first need to know what the interest-on-interest effect (or compound interest) is.
 

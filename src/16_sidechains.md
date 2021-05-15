@@ -1,4 +1,4 @@
-# 1Sidechains
+# Sidechains
 
 One of the biggest drawbacks of decentralized platforms is scalability. For example, Bitcoin and Ethereum are limited in their transactions (per second) compared to centralized payment companies such as VISA. This issue, also called the scalability problem, is a well known challenge for decentralized platforms. Bitcoin, for example, can only handle a maximum of 7 transactions per second. VISA however, can process over 20,000 transactions per second. This is of course a huge difference and if Bitcoin, or crypto as a whole, wants to compete with entities such as VISA, they still have a very long way to go. Fortunately, there are several layer 2 solutions to improve scalability, one of them being sidechains.
 

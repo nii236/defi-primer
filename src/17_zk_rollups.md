@@ -1,4 +1,4 @@
-# 1ZK Rollups
+# ZK Rollups
 
 Scalability is without a doubt the biggest problem that Bitcoin (BTC) and other blockchains are facing. Due to the nature of most blockchains, cryptocurrency suffers from slow transaction speeds and high transaction costs. Ethereum is no exception either. In fact, since the rise of DeFi and NFTs, the Ethereum network has become clogged.
 

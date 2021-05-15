@@ -1,4 +1,4 @@
-# 1Derivatives
+# Derivatives
 
 Traditional banking does not offer any attractive interest rates anymore. Some of them even go so far as to have a negative deposit rate. Because of this, It is getting more popular by the day for investors to move their money from their banking account to centralized exchanges to buy stocks or crypto. And then there are investors who take it even further: They invest in DeFi. It is common knowledge to spread your investments in, for example, various stocks, crypto and indices to minimize risks. In case of stocks and indices, this would still require the investor to invest via centralized exchanges. Except… they don’t have to. At least, not anymore.
 
