@@ -112,5 +112,3 @@ As of writing, the sDEFI index includes the following tokens:
 ## Conclusion
 
 With so many high potential DeFi projects launching on the Ethereum platform, it can be very difficult for investors to separate the wheat from the chaff. Luckily for them, DeFi indices can help investors with setting up healthy portfolios with little to no maintenance from the investor’s side.
-
-- You might like [my post about derivatives](https://www.reddit.com/r/CryptoCurrency/comments/mt8c67/defi_explained_derivatives/).

@@ -60,6 +60,3 @@ Since an investor can use almost any asset as collateral with UMA, you can use, 
 ## Final words
 
 The DeFi derivatives market is growing. Thanks to platforms like UMA and Synthetix, it is now possible for investors to invest in synthetic assets, which would normally only be possible via CeFi. It is therefore expected that derivatives platforms are going to play a major role in future derivative investing.
-
-- Interested in DeFi indices? [Click this link](https://www.reddit.com/r/CryptoCurrency/comments/muonht/defi_explained_indices/)!
-- You might have missed my previous post about [margin trading](https://www.reddit.com/r/CryptoCurrency/comments/mslzt8/defi_explained_margin_trading/).

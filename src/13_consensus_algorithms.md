@@ -82,5 +82,3 @@ Crypto currencies that utilize Proof of Capacity, also known as Proof of Space, 
 ## Conclusion
 
 Consensus mechanisms are essential to the functioning of distributed systems such as blockchains. There is no “perfect” consensus mechanism, and chances are that there never will be, but it sure is interesting to see newer cryptocurrencies coming out with their own consensus mechanism protocols.
-
-- Not sure what ERC-20 tokens to invest in? [Read my post about Indices](https://www.reddit.com/r/CryptoCurrency/comments/muonht/defi_explained_indices/).

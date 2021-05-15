@@ -111,6 +111,3 @@ I hope this post helped you out with;
 
 - Getting a deeper understanding of crypto wallets.
 - Setting up a crypto wallet.
-
-Not sure what DeFi is? Check my previous post [here](https://www.reddit.com/r/CryptoCurrency/comments/mctn4r/defi_explained_what_is_defi/).  
-Next up: [Smart contracts](https://www.reddit.com/r/CryptoCurrency/comments/me9p7h/defi_explained_smart_contracts/)

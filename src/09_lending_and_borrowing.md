@@ -100,5 +100,3 @@ Of that 16% interest paid by Celsius' institutional clients, 80% goes to Celsius
 ## Final words
 
 DeFi (and CeFi) crypto lending platforms are experiencing a hype that has attracted billions of dollars from investors. Based on these numbers, it can be concluded that migration from banking to blockchain and exchanges seems like a natural next step for the entire crypto niche and will most likely keep continuing and evolving.
-
-- Did you know most new crypto currencies are [initiated through forks](https://www.reddit.com/r/CryptoCurrency/comments/mnbc6i/defi_explained_forks/)?

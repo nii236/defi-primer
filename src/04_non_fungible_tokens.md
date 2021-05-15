@@ -52,6 +52,3 @@ Let's look at an example: a car accident. Two different parties. Two different i
 ## Final words
 
 In this post, you’ve learned that non-replaceable tokens are unique and have unique properties. This allows them to be associated with a specific item. In addition, items such as artwork, have different values ​​that make it interesting to use NFTs. Especially in the gaming industry, it is becoming more popular to use NFTs.
-
-Missed my previous post about smart contracts? You can read the post [here](https://www.reddit.com/r/CryptoCurrency/comments/me9p7h/defi_explained_smart_contracts/).  
-Next post: [Liquidity pools](https://www.reddit.com/r/CryptoCurrency/comments/mfk2oi/defi_explained_liquidity_pools/)

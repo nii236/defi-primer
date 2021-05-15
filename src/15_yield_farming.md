@@ -84,5 +84,3 @@ Curve also allows you to lock CRV coins into their vault for a set amount of tim
 ## Conclusion
 
 Because of the interest-on-interest effect, you can let your savings grow faster, without depositing extra money into the account yourself. The higher the savings interest and / or the savings balance, the greater the effect. So, The longer you leave the money, the greater the yield. Thanks to DeFi (and its platforms of course), high interest rates are accessible for every crypto investor.
-
-- Do you know [what stable coins are](https://www.reddit.com/r/CryptoCurrency/comments/mysxvz/defi_explained_stablecoins/)?

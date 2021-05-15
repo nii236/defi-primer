@@ -54,8 +54,3 @@ As mentioned earlier, Fulcrum also supports traditional lending & borrowing feat
 ## Conclusion
 
 Margin trading is a high risk/reward game which should only be exercised by experienced investors. Both fulcrum and dYdx are designed to be robust yet simple platforms for margin trading and lending that takes full advantage of the benefits of smart contracts and decentralization.
-
-- Interested in platforms such as Synthetix? Read my post about [derivatives](https://www.reddit.com/r/CryptoCurrency/comments/mt8c67/defi_explained_derivatives/).
-- Missed my post about DeFi lending and borrowing platforms? [Read it here.](https://www.reddit.com/r/CryptoCurrency/comments/mnzv1c/defi_explained_lending_borrowing/)
-
-EDIT: Margin trading is risky. This post should not be interpreted as finacial advice. DYOR.

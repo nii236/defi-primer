@@ -62,5 +62,3 @@ Another interesting oracle platform is Band Protocol. The main difference betwee
 With a blockchain Oracle we can have the blockchain communicate with central systems, so that much more is possible. Smart contracts in particular can make good use of this.
 
 Blockchain Oracles therefore ensure that we come a little closer to a future in which blockchain can play a major role. It builds a bridge between the world as we know it today and a world as it could be if we use blockchain.
-
-Interested in liquidity pools? Read about them in my previous post [here](https://www.reddit.com/r/CryptoCurrency/comments/mfk2oi/defi_explained_liquidity_pools/).

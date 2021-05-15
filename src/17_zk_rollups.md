@@ -109,5 +109,3 @@ In order to finalize this (way too long) post, let’s make quick summary of the
 ## Conclusion
 
 ZK Rollups are a solution for blockchains to be able to scale up further, so that they can execute faster and more transactions. Like other Layer 2 Solutions such as sidechains, ZK Rollups are a Layer 2 Solution on top of the main chain (off-chain). And because of this, not all data has to be included in the main chain, making the validation of blocks faster and cheaper.
-
-* Interested in other Layer 2 Solutions? Read my post about sidechains [here](https://www.reddit.com/r/CryptoCurrency/comments/nc3ck2/defi_explained_sidechains/).

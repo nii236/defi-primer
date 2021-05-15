@@ -69,6 +69,3 @@ A replay attack can only take place in the first days of a new crypto coin. Afte
 ## Conclusion
 
 Thanks to soft forks, nodes are able to update their protocol. Hard Forks give the opportunity to split nodes that do not agree with each other, and thus create new protocols. Forks keep the blockchain healthy. Even though new forks are initiated daily, they make sure that only the best blockchains and platforms will survive.
-
-- New to DeFi lending & borrowing? And not sure where to start? [Check this post](https://www.reddit.com/r/CryptoCurrency/comments/mnzv1c/defi_explained_lending_borrowing/).
-- Did you know Bitcoin is [available on the Ethereum blockchain](https://www.reddit.com/r/CryptoCurrency/comments/mh2oc7/defi_explained_wrapped_bitcoin/)?

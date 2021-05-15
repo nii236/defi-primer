@@ -49,5 +49,3 @@ Although WBTC might publicly be the most known of BTC tokens, there are a few ot
 Wrapped Bitcoin, as well as the other variants, may be just what DeFi needs. Since it is linked to BTC and users can obtain it through a fairly simple process, it can rise. As bitcoin players, big or small, increasingly move to WBTC, renBTC, tBTC and sBTC, the liquidity boost can help DeFi soar to new heights.
 
 For investors, this offers a new way to earn interest on bitcoin holdings by depositing the token in yield farming DeFi protocols.
-
-- Do you know what Oracles are? Find out in my [previous post](https://www.reddit.com/r/CryptoCurrency/comments/mgak48/defi_explained_oracles/).

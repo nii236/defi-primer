@@ -73,5 +73,3 @@ PAX Gold tokens represent 1/400 part of a numbered gold bar. It is a 400 oz toke
 ## Final words
 
 Stablecoins offer an excellent opportunity to hedge against volatile or bear markets. It is up to the investors to choose which stablecoin they want to invest in. One thing is sure: the crypto market offers plenty of choice.
-
-- Do you now the difference between Proof of Work and Proof of Stake? [Read it here](https://www.reddit.com/r/CryptoCurrency/comments/mw05p6/defi_explained_blockchain_consensus/).

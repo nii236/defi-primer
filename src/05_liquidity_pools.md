@@ -97,6 +97,3 @@ If you are interested in yield farming, I would recommend to use DeFi dashboard 
 ## Final words
 
 Liquidity pools provide a user-friendly platform for both users and exchanges. The user does not have to meet any special eligibility criteria to participate in liquidity pools, which means that anyone can participate in the provision of liquidity for a token pair. In the DeFi ecosystem, liquidity pools play an essential role, and the concept has been able to increase the level of decentralization.
-
-Do you know what Oracles are? Find out in this [post](https://www.reddit.com/r/CryptoCurrency/comments/mgak48/defi_explained_oracles/).  
-So what's all the hype around NFTs? You can read about them in my previous post [here](https://www.reddit.com/r/CryptoCurrency/comments/mexb51/defi_explained_nfts/).

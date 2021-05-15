@@ -70,6 +70,3 @@ I hope this post helped you with:
 
 - Getting a better understanding of smart contracts
 - Understanding the significance of smart contracts within the crypto space.
-
-Next post: [NFTs](https://www.reddit.com/r/CryptoCurrency/comments/mexb51/defi_explained_nfts/)  
-Wondering which crypto wallet you need? Check my post about wallets [here](https://www.reddit.com/r/CryptoCurrency/comments/mdjsrj/defi_explained_defi_wallets/).

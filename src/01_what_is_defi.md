@@ -99,5 +99,3 @@ Defi is the closest thing that can actually disrupt the traditional financial in
 Currently, most of the financial products can be only created by banks. Defi is open, permissionless and enables cooperative work in a similar way to the Internet.
 
 Although defi is currently built predominantly on Ethereum, with more adoption of interoperability protocols we may see more projects being built on different chains in the future.
-
-Now, it's time to [compare DeFi wallets](https://www.reddit.com/r/CryptoCurrency/comments/mdjsrj/defi_explained_defi_wallets/)!

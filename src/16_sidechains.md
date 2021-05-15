@@ -65,6 +65,3 @@ Polygon differentiates itself from “regular” sidechains because it uses a va
 ## Conclusion
 
 As time goes by, more and more users are interacting with blockchains. Due to the limited scalability of blockchains, sidechains can be used to prevent blockchains to overload and improve overal scalability. The ultimate goal of sidechains is to make the main chain only focus on high-value transactions, pegging of sidechains and an overal safe environment.
-
-* Do you know [what yield farming is](https://www.reddit.com/r/CryptoCurrency/comments/n0yng2/defi_explained_yield_farming/)?
-* Interested in other Layer 2 Solutions? [Check my post about ZK Rollups here](https://www.reddit.com/r/CryptoCurrency/comments/nctot7/defi_explained_zk_rollups/).
