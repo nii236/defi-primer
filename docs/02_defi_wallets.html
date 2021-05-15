@@ -1,0 +1,322 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>02. Defi wallets - DeFi Primer</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <link rel="stylesheet" href="css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="00_introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="01_what_is_defi.html"><strong aria-hidden="true">2.</strong> What is DeFi?</a></li><li class="chapter-item expanded "><a href="02_defi_wallets.html" class="active"><strong aria-hidden="true">3.</strong> Defi wallets</a></li><li class="chapter-item expanded "><a href="03_smart_contracts.html"><strong aria-hidden="true">4.</strong> Smart contracts</a></li><li class="chapter-item expanded "><a href="04_non_fungible_tokens.html"><strong aria-hidden="true">5.</strong> Non fungible tokens</a></li><li class="chapter-item expanded "><a href="05_liquidity_pools.html"><strong aria-hidden="true">6.</strong> Liquidity pools</a></li><li class="chapter-item expanded "><a href="06_oracles.html"><strong aria-hidden="true">7.</strong> Oracles</a></li><li class="chapter-item expanded "><a href="07_wrapped_bitcoin.html"><strong aria-hidden="true">8.</strong> Wrapped bitcoin</a></li><li class="chapter-item expanded "><a href="08_forks.html"><strong aria-hidden="true">9.</strong> Forks</a></li><li class="chapter-item expanded "><a href="09_lending_and_borrowing.html"><strong aria-hidden="true">10.</strong> Lending and borrowing</a></li><li class="chapter-item expanded "><a href="10_margin_trading.html"><strong aria-hidden="true">11.</strong> Margin trading</a></li><li class="chapter-item expanded "><a href="11_derivatives.html"><strong aria-hidden="true">12.</strong> Derivatives</a></li><li class="chapter-item expanded "><a href="12_indices.html"><strong aria-hidden="true">13.</strong> Indices</a></li><li class="chapter-item expanded "><a href="13_consensus_algorithms.html"><strong aria-hidden="true">14.</strong> Consensus algorithms</a></li><li class="chapter-item expanded "><a href="14_stablecoins.html"><strong aria-hidden="true">15.</strong> Stablecoins</a></li><li class="chapter-item expanded "><a href="15_yield_farming.html"><strong aria-hidden="true">16.</strong> Yield farming</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">DeFi Primer</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                        
+
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="2-defi-explained-defi-wallets"><a class="header" href="#2-defi-explained-defi-wallets">2. DeFi Explained: DeFi wallets</a></h1>
+<p>What are the best DeFi-friendly wallets? What features do they support? And what are the pros and cons of using each of them? I’ll try to answer these questions in this post.</p>
+<h2 id="in-general"><a class="header" href="#in-general">In general</a></h2>
+<p>Wallets, allow for sending, receiving and storing cryptocurrency. They come in many different shapes and forms, but the most popular options are:</p>
+<ul>
+<li>a browser extension</li>
+<li>a hardware wallet</li>
+<li>a mobile app</li>
+<li>a web wallet</li>
+</ul>
+<p>DeFi-friendly wallets facilitate managing your digital assets and interacting with DeFi applications, such as decentralized exchanges or lending and borrowing protocols.</p>
+<p>Let’s start with a wallet that most DeFi users are very familiar with: Metamask.</p>
+<h2 id="metamask"><a class="header" href="#metamask">Metamask</a></h2>
+<p>Metamask is a crypto wallet and a gateway to blockchain apps. It allows users to easily connect to all popular DeFi apps such as Uniswap, Compound, Aave, Maker and Yearn Finance.</p>
+<p>Metamask supports ETH and Ethereum based tokens such as ERC20 and ERC721. It is basically a bridge into Ethereum.</p>
+<p>Metamask (and all other wallets) mentioned in this post is non-custodial. This means that users have complete control and ownership over the assets stored in their wallet.</p>
+<p>But like always, with great power comes great responsibility. Users of non-custodial wallets cannot rely on the wallet provider to recover their wallet and instead, they have to take wallet recovery into their own hands. This is usually achieved by securing a recovery phrase.</p>
+<p>A recovery phrase, also known as a seed phrase, is a set of words that can be used to fully restore a wallet with all of its corresponding private and public keys. This means that losing access to your wallet, together with losing your recovery phrase is equal to losing all of your digital assets stored in that wallet. This is also why everyone, who decides to use a non-custodial wallet, has to take the security of their recovery phrase seriously.</p>
+<p>The basic security measures for your recovery phrase include:</p>
+<ul>
+<li>Write it down offline e.g. on a piece of paper, preferably with multiple copies stored securely in different locations</li>
+<li>Never store any copies of your recovery phrase online e.g. in a Google doc or Apple notes</li>
+<li>Move funds to a new wallet if you have to recover an existing wallet using your recovery phrase</li>
+</ul>
+<p>In Metamask, the private keys derived from the recovery phrase are stored in the user’s browser and they are not sent to an external server, for security reasons. The private keys are used to sign transactions in the user’s browser before broadcasting them to the Ethereum network. Metamask allows for creating multiple accounts where each account has its own pair of private and public keys that can be derived from the recovery phrase.</p>
+<p>So, what are the pros and cons of using Metamask?</p>
+<p>Pros:</p>
+<ul>
+<li>Non-custodial</li>
+<li>An easy to use bridge into Ethereum and DeFi apps</li>
+<li>Open-source</li>
+<li>Private keys are kept in the user’s browser</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>It is still a “hot” wallet – so the keys are stored on the device that is connected to the Internet which increases the risk</li>
+<li>It only supports Ethereum-based assets – this could be a problem for people who want to keep all of their assets in one place.</li>
+</ul>
+<p>With over 1 million users, Metamask is usually a go-to wallet for everyone interested in DeFi. Although Metamask is mostly used as a browser extension, it also offers a mobile app. The users have an option to sync the existing wallet with a mobile app, creating a new wallet or recovering a wallet using a recovery phrase.</p>
+<h2 id="hardware-wallets"><a class="header" href="#hardware-wallets">Hardware Wallets</a></h2>
+<p>Our next DeFi-friendly wallet is a hardware device that most of the cryptocurrency users have already heard of: Ledger. Ledger allows users to store multiple assets including ETH and ERC20 tokens, Bitcoin, Litecoin or Zcash. Ledger, similarly to Metamask, requires users to write down their recovery phrase when setting up the device.</p>
+<p>With Ledger, user’s private keys are stored offline on a secure hardware device. This provides full isolation between the private keys and online devices such as computers or smartphones that can be more vulnerable to hacks. This makes it a great option for users that have a significant amount of digital assets.</p>
+<p>When it comes to DeFi-friendliness, Ledger has recently added a feature that allows for lending coins on Compound directly from the hardware device via the LedgerLive management app. They are also working on adding more DeFi features in the future.</p>
+<p>Additionally, Metamask allows users to create a separate account that is connected to a hardware wallet, such as Ledger. The account behaves exactly like any other MetaMask account making navigating across multiple DeFi apps super easy. The main difference is that in order to sign a transaction, the hardware device has to be connected to your machine. A ledger device is highly recommended to anyone taking the security of their digital assets seriously.</p>
+<p>The pros and cons of using Ledger:</p>
+<p>Pros:</p>
+<ul>
+<li>Highest degree of security available for the everyday user</li>
+<li>Supports a wide range of cryptocurrencies</li>
+<li>Integrated with Compound via LedgerLive</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>The inconvenience of using a separate hardware device</li>
+<li>Requires security of the physical device (although each Ledger is also secured by a PIN code)</li>
+</ul>
+<p>The most popular model is Ledger Nano S which connects to your computer via USB. Ledger also offers a range of other models including a Bluetooth-based Ledger Nano X.</p>
+<h2 id="mobile-wallets"><a class="header" href="#mobile-wallets">Mobile Wallets</a></h2>
+<p>When it comes to DeFi-friendly wallets that are available on your phone, Argent is one of the best choices. Argent makes interacting with DeFi easy by directly integrating with multiple different DeFi protocols such as Uniswap, Aave, Compound or Set Protocol.</p>
+<p>Argent, similarly to the other already mentioned wallets, is non-custodial. When a new wallet is created, Argent creates a smart contract on Ethereum that is controlled by the user of the wallet, so Argent doesn’t have any control over that smart contract at any point. This allows for enabling extra features that wouldn’t be possible to achieve just with a simple Ethereum address.</p>
+<p>When it comes to security, Argent uses a different recovery model. Instead of writing down a recovery phrase, users can set up social recovery by choosing “Guardians”. Guardians can be your trusted friends or family members, but also other devices such as hardware wallets, MetaMask or third party services.</p>
+<p>In order to recover a wallet, the majority of Guardians have to provide an approval. If the number of Guardians is even, 50% is enough to proceed with the recovery.</p>
+<p>Argent also provides an option to set daily transfer limits and even the ability to temporarily freeze your wallet, just like how you can freeze a credit card.</p>
+<p>So, The pros and cons of using Argent in a nutshell:</p>
+<p>Pros:</p>
+<ul>
+<li>Non-custodial</li>
+<li>Doesn’t require a recovery phrase</li>
+<li>Integrated with the most popular DeFi protocols</li>
+<li>Daily limits and locking option</li>
+</ul>
+<p>Cons:</p>
+<ul>
+<li>Requires a good understanding of the social recovery model</li>
+<li>Still a limited number of DeFi protocols available (cannot just use a new one)</li>
+<li>Still not as secure as a hardware wallet</li>
+</ul>
+<h2 id="defi-dashboards"><a class="header" href="#defi-dashboards">DeFi Dashboards</a></h2>
+<p>Although they are not strictly wallets, it’s also worth mentioning two apps that make managing a DeFi portfolio much easier: Zapper and Zerion. Both apps allow users to see their portfolio in one place. A user can either connect a wallet, such as Metamask or Ledger, to be able to invest or transfer their assets or they can provide an address/set of addresses to see a portfolio in a view-only mode.</p>
+<p>I hope this post helped you out with;</p>
+<ul>
+<li>Getting a deeper understanding of crypto wallets.</li>
+<li>Setting up a crypto wallet.</li>
+</ul>
+<p>Not sure what DeFi is? Check my previous post <a href="https://www.reddit.com/r/CryptoCurrency/comments/mctn4r/defi_explained_what_is_defi/">here</a>.<br />
+Next up: <a href="https://www.reddit.com/r/CryptoCurrency/comments/me9p7h/defi_explained_smart_contracts/">Smart contracts</a></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="01_what_is_defi.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="03_smart_contracts.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="01_what_is_defi.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="03_smart_contracts.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
