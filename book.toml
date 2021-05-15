@@ -1,0 +1,6 @@
+[book]
+authors = ["John Nguyen"]
+language = "en"
+multilingual = false
+src = "src"
+title = "DeFi Primer"
