@@ -18,3 +18,6 @@
 - [Yield farming](./15_yield_farming.md)
 - [Sidechains](./16_sidechains.md)
 - [ZK Rollups](./17_zk_rollups.md)
+- [50 Common Terms in Crypto](./18_50_terms.md)
+- [Token types](./19_token_types.md)
+- [Airdrops](./20_airdrops.md)

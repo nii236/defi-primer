@@ -1,0 +1,330 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Token types - DeFi Primer</title>
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        
+        <link rel="stylesheet" href="css/print.css" media="print">
+        
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="00_introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="01_what_is_defi.html"><strong aria-hidden="true">2.</strong> What is DeFi?</a></li><li class="chapter-item expanded "><a href="02_defi_wallets.html"><strong aria-hidden="true">3.</strong> Defi wallets</a></li><li class="chapter-item expanded "><a href="03_smart_contracts.html"><strong aria-hidden="true">4.</strong> Smart contracts</a></li><li class="chapter-item expanded "><a href="04_non_fungible_tokens.html"><strong aria-hidden="true">5.</strong> Non fungible tokens</a></li><li class="chapter-item expanded "><a href="05_liquidity_pools.html"><strong aria-hidden="true">6.</strong> Liquidity pools</a></li><li class="chapter-item expanded "><a href="06_oracles.html"><strong aria-hidden="true">7.</strong> Oracles</a></li><li class="chapter-item expanded "><a href="07_wrapped_bitcoin.html"><strong aria-hidden="true">8.</strong> Wrapped bitcoin</a></li><li class="chapter-item expanded "><a href="08_forks.html"><strong aria-hidden="true">9.</strong> Forks</a></li><li class="chapter-item expanded "><a href="09_lending_and_borrowing.html"><strong aria-hidden="true">10.</strong> Lending and borrowing</a></li><li class="chapter-item expanded "><a href="10_margin_trading.html"><strong aria-hidden="true">11.</strong> Margin trading</a></li><li class="chapter-item expanded "><a href="11_derivatives.html"><strong aria-hidden="true">12.</strong> Derivatives</a></li><li class="chapter-item expanded "><a href="12_indices.html"><strong aria-hidden="true">13.</strong> Indices</a></li><li class="chapter-item expanded "><a href="13_consensus_algorithms.html"><strong aria-hidden="true">14.</strong> Consensus algorithms</a></li><li class="chapter-item expanded "><a href="14_stablecoins.html"><strong aria-hidden="true">15.</strong> Stablecoins</a></li><li class="chapter-item expanded "><a href="15_yield_farming.html"><strong aria-hidden="true">16.</strong> Yield farming</a></li><li class="chapter-item expanded "><a href="16_sidechains.html"><strong aria-hidden="true">17.</strong> Sidechains</a></li><li class="chapter-item expanded "><a href="17_zk_rollups.html"><strong aria-hidden="true">18.</strong> ZK Rollups</a></li><li class="chapter-item expanded "><a href="18_50_terms.html"><strong aria-hidden="true">19.</strong> 50 Common Terms in Crypto</a></li><li class="chapter-item expanded "><a href="19_token_types.html" class="active"><strong aria-hidden="true">20.</strong> Token types</a></li><li class="chapter-item expanded "><a href="20_airdrops.html"><strong aria-hidden="true">21.</strong> Airdrops</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">DeFi Primer</h1>
+
+                    <div class="right-buttons">
+                        
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        
+                        
+
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="token-types"><a class="header" href="#token-types">Token Types</a></h1>
+<p>Many new tokens are created on the blockchain every day. However, these tokens can be very different from each other in terms of usability. While one token could give you the right to profit sharing, the other gives you the right to perform certain actions on the blockchain and yet another type of token functions as a digital share.</p>
+<p>There are currently five different token types, with each token type having its own utilization. The five token types are:</p>
+<ul>
+<li>Asset Tokens</li>
+<li>Equity Tokens</li>
+<li>Utility Tokens</li>
+<li>Reputation Tokens</li>
+<li>Security Tokens</li>
+</ul>
+<p>The above mentioned tokens will be further explained in this post.</p>
+<h2 id="utility-tokens"><a class="header" href="#utility-tokens">Utility tokens</a></h2>
+<p>Utility tokens can be used to access or pay for a product or service of a particular crypto project. The tokens have a specific use case within the ecosystem of the blockchain project. These types of tokens are often referred to as &quot;User Tokens&quot;. Most of the utility tokens in the current market are ERC20 tokens and thus developed on the Ethereum blockchain.</p>
+<p>A utility token is not originally intended to serve as an investment, because these types of tokens are aimed at the token functionalities of the relevant blockchain project. Yet there are many cryptocurrency investors who only buy utility tokens for profit. Quite understandable, because the majority of the current token market are utility tokens, a large number of which have made nice price gains.</p>
+<h2 id="features-of-utility-tokens"><a class="header" href="#features-of-utility-tokens">Features of Utility tokens</a></h2>
+<p>As a token creator, you enjoy various benefits when you create a utility token. For example, you do not have to comply with certain legislation that applies to other types of tokens. These laws and regulations do not apply to utility tokens, because they are not designed as an investment by nature. In addition to not having to comply with various laws and regulations, utility tokens have a few other characteristics, namely the following:</p>
+<ul>
+<li>Utility tokens operate on an existing blockchain on which smart contracts have been developed, such as Ethereum or Gochain.</li>
+<li>Each token has its own functionality and in most cases can only be used within one specific blockchain project.</li>
+<li>They make it possible to trade digitally.</li>
+<li>They have more functions than just a means of payment. They are also used as proof of a product or share.</li>
+</ul>
+<p>However, there are also many utility tokens that have not worked out as originally planned.</p>
+<p>Below are some examples of issues utility token investors have encountered:</p>
+<ul>
+<li>The tokens do not have a real &quot;use case&quot; because the idea was not feasible in practice.</li>
+<li>The utility tokens are not adopted by the target group, so that the tokens are not or rarely used.</li>
+<li>The owners of the tokens have no control, allowing the founding team to make their own decisions about the functionalities and future of the tokens.</li>
+<li>The tokens are not liquid, which means that they are barely tradable. This is generally bad for the value of the tokens.</li>
+</ul>
+<h2 id="examples-of-utility-tokens"><a class="header" href="#examples-of-utility-tokens">Examples of Utility tokens</a></h2>
+<p>Basic Attention Token (BAT) is a good example of a utility token. BAT is built on the Ethereum blockchain and is a decentralized advertising platform on which advertisers and publishers can come into contact with each other. Advertisers buy advertising space via the BAT platform to be able to advertise, while publishers of advertising space are paid in BAT.</p>
+<p>FUNtoken (FUN) is another example of a utility token. FUN, like BAT, is built on the Ethereum blockchain and specializes in online casino games. FUN can be used to make purchases in the FUN app, but also to make purchases within certain games offered on the FUN platform.</p>
+<p>A third example of a utility token is Sirin Labs Token (SRN). SRN token was thus developed to enable investors in Sirin Labs to take advantage of SRN by using it to pay for products and services offered by Sirin Labs.</p>
+<h2 id="security-tokens"><a class="header" href="#security-tokens">Security tokens</a></h2>
+<p>Security tokens can be seen as an investment product. Security tokens are bought with the expectation to receive dividends or profit from them. Security tokens can be marketed just like utility tokens, only then not via an Initial Coin Offering (ICO) but via a Security Token Offering (STO). An STO is similar to an ICO, but safer since security tokens have underlying value. The underlying value of security gives investors more security than when they invest in utility tokens.</p>
+<p>However, many crypto projects do not want their token to be labeled as a security token. When a token is seen as a security, the issuer of the token is bound by certain laws and regulations that he would not be bound by in the case of a utility token.</p>
+<p>This is because security tokens fall in the same vein as stocks, bonds and ETFS. This may be accompanied by limitations in terms of tradability. Less tradability often makes it more difficult to launch on an exchange with a lot of volume. As a result, security tokens are not always as popular as an investment option compared to utility tokens.</p>
+<h2 id="features-of-security-tokens"><a class="header" href="#features-of-security-tokens">Features of Security tokens</a></h2>
+<p>As the creator of a security token, you must comply with certain laws and regulations. These laws and regulations do not apply to utility tokens, because they are not designed as an investment by nature. In addition to having to comply with various laws and regulations, security tokens have a few other characteristics, namely the following:</p>
+<ul>
+<li>The tokens entitle you to a profit distribution in case a company makes a profit.</li>
+<li>They give the right to control within the company.</li>
+<li>They are supervised by national regulators such as the AFM or SEC.</li>
+</ul>
+<h2 id="examples-of-security-tokens"><a class="header" href="#examples-of-security-tokens">Examples of Security tokens</a></h2>
+<p>Blockchain Capital is a good example of a Security token. Blockchain Capital was one of the first companies to launch a security token. With the STO of their BCAP token, Blockchain Capital managed to raise $ 10 million in 6 hours. People who own the BCAP token are entitled to a portion of the profits made by Blockchain Capital.</p>
+<p>Another example of a Security token is Slice. Slice is a commercial real estate platform where international investors can invest in real estate in the United States. Slice offers partial ownership of commercial properties that entitle investors to a &quot;dividend&quot; in tokens paid out quarterly.</p>
+<p>A third example of a security token is Siafunds. In addition to Siafund, the blockchain project Sia also has a Siacoin, but the Siacoin is a utility token. The Siacoin can be used within Sia's &quot;cloud storage&quot; platform by both tenants and lessors of &quot;cloud storage&quot;. The Siafunds token has no functionalities, but as the owner of Siafunds tokens you are entitled to a part of the profit from the project.</p>
+<h2 id="equity-tokens"><a class="header" href="#equity-tokens">Equity tokens</a></h2>
+<p>Equity tokens are more of a subgroup of the security token. Security and equity tokens are tokens that represent a tradable security on a blockchain. The difference, however, is that an equity token is proof of the value of a company, just like a stock or a debt certificate. With an equity token you become co-owner of a certain project. You can compare an equity token with a digital share, but from a blockchain project.</p>
+<p>The Security and Exchange Commission (SEC) is the one that determines whether a token is an investment product or not. This decision is made on the basis of the Howey test. When the SEC regards a token as an equity token, the issuer of the token will have to comply with the laws and regulations imposed by the SEC.</p>
+<h2 id="features-of-equity-tokens"><a class="header" href="#features-of-equity-tokens">Features of Equity tokens</a></h2>
+<p>The main feature of an equity token is that they have exactly the same properties as a share, but on the blockchain. As an equity token holder, you are co-owner of the relevant blockchain project. Being a co-owner also gives you the right to control within the company, which in turn depends on the percentage size of your position in the company.</p>
+<p>The fact that equity tokens are very similar to stocks bodes well for the future. At the moment there are not many equity tokens in circulation. This is partly because there is still a lot of uncertainty in the crypto world regarding laws and regulations. The legality of equity tokens must be tested on the basis of the laws and regulations within the jurisdiction where the token is issued.</p>
+<p>However, with a view to the future, equity tokens are a very safe option for investors to invest. Reasons for this are: regulation, co-ownership and employee participation.</p>
+<h2 id="examples-of-equity-tokens"><a class="header" href="#examples-of-equity-tokens">Examples of Equity tokens</a></h2>
+<p>Neufund is at the forefront of issuing equity tokens. Neufund is a German company that specializes in issuing equity tokens. German laws and regulations offer the possibility to legally issue equity tokens. Foreign companies can even issue an equity token with Neufund without a parent or subsidiary in Germany.</p>
+<p>The Neufund platform is used to raise funds and finance for companies by issuing equity tokens. Neufund does this with the help of smart contracts and the Ethereum blockchain. The equity tokens are issued through Equity Token Offerings (ETOs).</p>
+<h2 id="reputation-tokens"><a class="header" href="#reputation-tokens">Reputation tokens</a></h2>
+<p>The Reputation token, also called a reward token, is a token that is used within the ecosystem of a blockchain project. The amount of Reputation tokens you own determines your final status within the network. You can earn Reputation tokens by actively participating in the network.</p>
+<p>By completing tasks you will receive a reward in the form of Reputation tokens. The more tokens you have, the higher your reputation will be within the network.</p>
+<h2 id="features-of-reputation-tokens"><a class="header" href="#features-of-reputation-tokens">Features of Reputation tokens</a></h2>
+<p>As the creator of a Reputation token, just like with a utility token, you do not have to comply with the laws and regulations that apply to security tokens and related items. These laws and regulations do not apply to reputation tokens, because they are by nature not designed as an investment. In addition to not having to comply with various laws and regulations, reputation tokens have a few other characteristics, namely the following:</p>
+<ul>
+<li>Reputation tokens can be earned without having to invest.</li>
+<li>Reputation tokens are marketed through an ICO.</li>
+<li>Reputation tokens often have a tight-knit community, as a lot is contributed because of the rewards.</li>
+</ul>
+<h2 id="examples-of-reputation-tokens"><a class="header" href="#examples-of-reputation-tokens">Examples of Reputation tokens</a></h2>
+<p>Augur is a well-known example when it comes to Reputation tokens (REP). Augur has built a platform with which they want to decentralize the gambling market. With Augur's REP token you can bet on sports matches, for example, with which more REP tokens can be earned.</p>
+<p>The people who create events on the Augur platform have to pay for this with REP tokens as underlying value. In return, event creators receive a portion of the fee in REP tokens to create and maintain the event.</p>
+<h2 id="asset-tokens"><a class="header" href="#asset-tokens">Asset Tokens</a></h2>
+<p>Asset tokens are tokens used to represent a physical product. With an asset token you can, for example, have your house represented by a cryptocurrency. You do this by placing the rights of a certain product such as a house in an asset token. For example, when you tokenize your home, you could sell your home in part or in full by means of asset tokens via the blockchain.</p>
+<p>Imagine that your house is worth $ 500,000 and you want to convert your house to asset tokens. Then you can use asset tokens to transform the value of your house into, for example, 500,000 tokens of 1 $ or 1,000,000 tokens of $ 0.50. In case you convert your house to 500,000 tokens of $ 1, each token represents 1 / 500,000th part of your house.</p>
+<p>Other examples of products that lend themselves well to tokenization in an asset token are book and film patents, paintings, gold, commercial properties and debtor and creditor balances.</p>
+<h2 id="features-of-asset-tokens"><a class="header" href="#features-of-asset-tokens">Features of Asset tokens</a></h2>
+<p>Like other tokens, asset tokens also have certain characteristics. Illiquid assets are the most obvious asset group to convert to asset tokens. However, corporate debt and assets are seen as a much larger potential market. Asset-backed tokens can be divided into four categories:</p>
+<ul>
+<li>Tokenizing tangible products such as houses and paintings</li>
+<li>The tokenization of intangible products such as patents or digital products</li>
+<li>Tokenize commodities such as oil, gas, coffee and sugar</li>
+<li>Debt and equity tokenization</li>
+</ul>
+<p>Asset tokenization can bring several benefits. Quite a few effects in such a current form, namely limitations. Securities tokenization can bring about the following benefits:</p>
+<ul>
+<li>Lower costs by avoiding 3rd parties</li>
+<li>Higher liquidity because purchasing becomes more accessible</li>
+<li>Faster transaction speed (due to higher liquidity)</li>
+</ul>
+<p>A disadvantage of asset tokens is that to a certain extent there will be centralization again, while one of the core values ​​of cryptocurrencies is decentralization.</p>
+<h2 id="examples-of-asset-tokens"><a class="header" href="#examples-of-asset-tokens">Examples of Asset tokens</a></h2>
+<p>Goldmint is a good example of an Asset token. Goldmint is an asset token that represents physical gold. By buying Goldmint tokens, you are buying gold. Gold coin represents gold or gold products from 24 karat gold.</p>
+<p>Another example of an Asset token is Latoken (LA). The LAtoken platform allows investors to trade physical products with each other. LA represents these traded physical products.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="18_50_terms.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="20_airdrops.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a rel="prev" href="18_50_terms.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a rel="next" href="20_airdrops.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
