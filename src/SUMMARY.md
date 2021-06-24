@@ -21,3 +21,4 @@
 - [50 Common Terms in Crypto](./18_50_terms.md)
 - [Token types](./19_token_types.md)
 - [Airdrops](./20_airdrops.md)
+- [Vaults](./21_vaults.md)
