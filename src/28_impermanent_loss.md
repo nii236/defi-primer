@@ -41,7 +41,7 @@ THe dashboard shows Fees APY, IL APY and Net APY depending on the entry time int
 
 &#x200B;
 
-https://preview.redd.it/9hvo743cxni71.jpg?width=1102&format=pjpg&auto=webp&s=68e8665628ecce7c6b355806d565bc27d8a429e6
+![](https://preview.redd.it/9hvo743cxni71.jpg?width=1102&format=pjpg&auto=webp&s=68e8665628ecce7c6b355806d565bc27d8a429e6)
 
 Example above shows that even in a longer term (300 days) fees accrued in LP may not offset IL. But there is still a way how to counteract this. **It's my 3rd tip: 3: Average your entry to LP to minimise impact of IL.** It basically means to add to LP multiple times.
 
@@ -49,7 +49,7 @@ Each time you add to LP, you average your entry prices. The aim is to minimise t
 
 &#x200B;
 
-https://preview.redd.it/n6nz15xcxni71.jpg?width=1108&format=pjpg&auto=webp&s=b61282d8a56a549d20099c80450f2ea06b0cec10
+![](https://preview.redd.it/n6nz15xcxni71.jpg?width=1108&format=pjpg&auto=webp&s=b61282d8a56a549d20099c80450f2ea06b0cec10)
 
 [APY.vision](https://apy.vision/) shows avg entry prices for your LPs in PRO mode but even in free version you see price changes (current vs avg entry) so you immediately know if one token outperforms the other. Your target is to keep these percentages close (low IL).
 
@@ -59,7 +59,7 @@ This is another useful dashboard from [APY.vision](https://apy.vision/) which sh
 
 &#x200B;
 
-https://preview.redd.it/2cqqmtzdxni71.jpg?width=1105&format=pjpg&auto=webp&s=3ee56a56e18992453aa483e3300791c2d4d79f48
+![](https://preview.redd.it/2cqqmtzdxni71.jpg?width=1105&format=pjpg&auto=webp&s=3ee56a56e18992453aa483e3300791c2d4d79f48)
 
 V/L in first days: 19.02, 17.05, 14.30, 5.46. This corresponds to APYs: 2083%, 1867%, 1566%, 598%. Such a high V/L is what you want in short term LP strategy - in 4 days you'd earn 17% on your liquidity, excluding potential IL. Let's focus on where to look for such high V/L.
 

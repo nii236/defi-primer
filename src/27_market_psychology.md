@@ -26,7 +26,7 @@ At the time of writing, there is a positve sentiment in the crypto market, as yo
 
 &#x200B;
 
-https://preview.redd.it/m8mwnu6fx9i71.png?width=640&format=png&auto=webp&s=6a3b39553ec1440824c9dd8b477b55c1995b56d1
+![](https://preview.redd.it/m8mwnu6fx9i71.png?width=640&format=png&auto=webp&s=6a3b39553ec1440824c9dd8b477b55c1995b56d1)
 
 The positive sentiment results in a bullish mentality among investors, due to the price of BTC (and other coins) going up strong. We're currently sitting at a greed index of 70, which is caused by the current resistance level at 48K.
 
@@ -83,7 +83,7 @@ Then, when prices start to fall, greed gives way to fear, denial and panic. More
 
 &#x200B;
 
-https://preview.redd.it/4saxsfwyu9i71.jpg?width=816&format=pjpg&auto=webp&s=b2299b78eb6eb69210ddf8eec045f9b692c1e973
+![](https://preview.redd.it/4saxsfwyu9i71.jpg?width=816&format=pjpg&auto=webp&s=b2299b78eb6eb69210ddf8eec045f9b692c1e973)
 
 ## The psychological effects of a price drop
 
