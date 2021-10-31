@@ -29,3 +29,4 @@
 - [LP tokens](./26_lp_tokens.md)
 - [Market psychology](./27_market_psychology.md)
 - [Impermanent loss](./28_impermanent_loss.md)
+- [Impermanent loss Pt 2](./29_impermanent_loss_pt_2.md)
